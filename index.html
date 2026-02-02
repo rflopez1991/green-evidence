@@ -1,217 +1,311 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Green Evidence – Evaluación Ambiental Basada en Evidencia</title>
-    <!-- Meta descripción para motores de búsqueda y redes sociales -->
-    <meta name="description" content="GreenEvidence es una plataforma de evaluación y consultoría ambiental especializada en la medición de impactos ambientales, políticas públicas y estrategias corporativas de sostenibilidad. Integramos análisis econométrico, ciencia de datos e inteligencia artificial para convertir datos ambientales complejos en evidencia útil para la toma de decisiones.">
-    <!-- Hoja de estilos personalizada -->
-    <link rel="stylesheet" href="style.css">
-    <!-- Fuente profesional para una lectura clara -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <!-- Iconos de Font Awesome para enriquecer el diseño -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-o4SSdJlF46kppfkoIoVKa8RnBdln/6q46yK+P1GGsE8OweczO4fS2SyG/Z2L6NQ5ri3kSajUpRSE7UprrAH6Ug==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-    <!-- Barra de navegación fija con logotipo y enlaces -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GreenEvidence – Evaluación ambiental basada en datos</title>
+    <!--
+      Esta página es un prototipo que demuestra cómo podría estructurarse
+      y diseñarse el sitio de GreenEvidence siguiendo principios de
+      accesibilidad, claridad y profesionalismo. No incluye imágenes externas
+      ni recursos que requieran permisos, y utiliza una paleta de colores
+      de alto contraste para asegurar una lectura confortable.
+    -->
+    <style>
+      /* Paleta de colores accesibles */
+      :root {
+        --primary-dark: #014d40;
+        --primary: #05676e;
+        --secondary: #028090;
+        --background: #f7fdfd;
+        --light: #ffffff;
+        --text-dark: #052d26;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: var(--text-dark);
+        background-color: var(--background);
+      }
+
+      header {
+        background-color: var(--primary-dark);
+        color: var(--light);
+        padding: 1.5rem;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 2rem;
+      }
+
+      nav {
+        margin-top: 0.5rem;
+      }
+
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 1rem;
+      }
+
+      nav a {
+        color: var(--light);
+        text-decoration: none;
+        font-weight: bold;
+        padding: 0.25rem 0.5rem;
+      }
+
+      nav a:hover,
+      nav a:focus {
+        text-decoration: underline;
+      }
+
+      .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 4rem 1rem;
+        text-align: center;
+        background-image: linear-gradient(to right, var(--primary), var(--secondary));
+        color: var(--light);
+      }
+
+      .hero h2 {
+        margin: 0 0 1rem;
+        font-size: 2.5rem;
+      }
+
+      .hero p {
+        font-size: 1.2rem;
+        max-width: 600px;
+        margin: 0 auto 1.5rem;
+      }
+
+      .cta-button {
+        background-color: var(--light);
+        color: var(--primary-dark);
+        border: none;
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+        font-weight: bold;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      .cta-button:hover,
+      .cta-button:focus {
+        background-color: #e4f2f1;
+      }
+
+      section {
+        padding: 3rem 1rem;
+        max-width: 960px;
+        margin: 0 auto;
+      }
+
+      .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+        color: var(--primary-dark);
+      }
+
+      .services {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 1.5rem;
+      }
+
+      .service-card {
+        background-color: var(--light);
+        border: 1px solid #dbe5e5;
+        border-radius: 6px;
+        padding: 1.5rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      }
+
+      .service-card h3 {
+        margin-top: 0;
+        color: var(--primary);
+      }
+
+      .methods {
+        background-color: var(--light);
+        border-radius: 6px;
+        padding: 2rem;
+      }
+
+      .reasons {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+
+      .reason-item {
+        background-color: var(--light);
+        border: 1px solid #dbe5e5;
+        border-radius: 6px;
+        padding: 1.5rem;
+      }
+
+      form {
+        display: grid;
+        gap: 1rem;
+      }
+
+      form label {
+        font-weight: bold;
+      }
+
+      form input,
+      form textarea {
+        width: 100%;
+        padding: 0.5rem;
+        border: 1px solid #c3d4d5;
+        border-radius: 4px;
+        font-size: 1rem;
+      }
+
+      form button {
+        background-color: var(--primary);
+        color: var(--light);
+        border: none;
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      form button:hover,
+      form button:focus {
+        background-color: var(--secondary);
+      }
+    </style>
+  </head>
+  <body>
     <header>
-        <nav class="navbar">
-            <div class="logo-area">
-                <img src="logo.png" alt="Logo de Green Evidence" class="logo-img">
-                <span class="brand">Green Evidence</span>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#metodos">Métodos</a></li>
-                <li><a href="#valores">Valores</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+      <h1>GreenEvidence</h1>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#metodos">Métodos</a></li>
+          <li><a href="#por-que">¿Por qué elegirnos?</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <!-- Sección de bienvenida con imagen de fondo y llamada a la acción -->
-    <section id="inicio" class="hero">
-        <div class="hero-inner">
-            <h1>Transformamos datos ambientales en evidencia</h1>
-            <p>
-                Nuestro equipo de economistas, ingenieros y científicos de datos combina la investigación
-                científica con métodos cuantitativos avanzados para medir el impacto ambiental de
-                proyectos, políticas públicas y estrategias corporativas. Entregamos información clara y
-                precisa para apoyar decisiones sostenibles y responsables.
-            </p>
-            <a href="#servicios" class="btn">Conoce nuestros servicios</a>
-        </div>
+    <section id="inicio" class="hero" role="banner">
+      <h2>Transformamos datos ambientales en evidencia</h2>
+      <p>
+        Somos una plataforma de evaluación y consultoría ambiental especializada en
+        la medición de impactos ambientales, políticas públicas y estrategias
+        corporativas de sostenibilidad. Integramos econometría, ciencia de
+        datos e inteligencia artificial para convertir información compleja en
+        decisiones informadas.
+      </p>
+      <button class="cta-button" onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})">Solicitar asesoría</button>
     </section>
 
-    <main>
-        <!-- Resumen de la organización -->
-        <section id="resumen" class="section summary">
-            <h2>Resumen</h2>
-            <p>
-                GreenEvidence es una plataforma de evaluación y consultoría ambiental, especializada en la medición de
-                impactos ambientales, políticas públicas y estrategias corporativas de sostenibilidad. La
-                organización integra metodologías de análisis econométrico, ciencia de datos e inteligencia
-                artificial para transformar información ambiental compleja en evidencia útil para la toma de
-                decisiones.
-            </p>
-        </section>
-        <!-- Servicios ofrecidos representados en tarjetas con iconos -->
-        <section id="servicios" class="section services">
-            <h2>Servicios</h2>
-            <p>
-                Ofrecemos asesoría técnica y académica para la evaluación del impacto ambiental de proyectos
-                y políticas públicas. Nuestros servicios incluyen:
-            </p>
-            <div class="cards">
-                <div class="card reveal">
-                    <i class="fa-solid fa-file-lines" aria-hidden="true"></i>
-                    <h3>Análisis de EIA y DIA</h3>
-                    <p>Revisamos y elaboramos Estudios de Impacto Ambiental (EIA) y Declaraciones de
-                        Impacto Ambiental (DIA) conforme a los requisitos del Sistema de Evaluación de
-                        Impacto Ambiental de Chile.</p>
-                </div>
-                <div class="card reveal">
-                    <i class="fa-solid fa-scale-balanced" aria-hidden="true"></i>
-                    <h3>Evaluación de políticas</h3>
-                    <p>Aplicamos métodos cuantitativos y cualitativos para medir los efectos de políticas
-                        y programas ambientales, considerando normas vigentes y mejores prácticas
-                        internacionales.</p>
-                </div>
-                <div class="card reveal">
-                    <i class="fa-solid fa-chalkboard-teacher" aria-hidden="true"></i>
-                    <h3>Capacitación y talleres</h3>
-                    <p>Diseñamos cursos y talleres sobre evaluación ambiental, participación ciudadana y
-                        consulta indígena para fortalecer capacidades profesionales.</p>
-                </div>
-                <div class="card reveal">
-                    <i class="fa-solid fa-file-contract" aria-hidden="true"></i>
-                    <h3>Reportes y divulgación</h3>
-                    <p>Elaboramos informes técnicos y académicos con lenguaje claro que facilitan la
-                        toma de decisiones y la comunicación con las partes interesadas.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Sección que resume el marco regulatorio y nuestras metodologías -->
-        <section id="metodos" class="section methods">
-            <h2>Métodos</h2>
-            <p>
-                La evaluación del impacto ambiental en Chile está regulada por el
-                Sistema de Evaluación de Impacto Ambiental (SEIA). Este sistema es un instrumento de
-                gestión ambiental de carácter preventivo que, mediante un procedimiento administrado
-                por el Servicio de Evaluación Ambiental, determina si el impacto ambiental de una
-                actividad o proyecto se ajusta a las normas vigentes.
-                Los proyectos con impactos significativos se someten a un Estudio de Impacto Ambiental
-                (EIA), mientras que los demás ingresan como Declaraciones de Impacto Ambiental
-                (DIA).
-            </p>
-            <div class="cards">
-                <div class="card reveal">
-                    <h3>Participación</h3>
-                    <p>En los EIA se exige siempre un período de participación ciudadana (PAC) y,
-                        cuando corresponde, una consulta a pueblos indígenas. En cambio, las DIA
-                        solo incluyen participación ciudadana si la ciudadanía lo solicita y la
-                        autoridad lo dispone.</p>
-                </div>
-                <div class="card reveal">
-                    <h3>Plazos de evaluación</h3>
-                    <p>Las DIA se revisan en 60 días con posibilidad de ampliación a 30 días, mientras
-                        que los EIA disponen de 120 días prorrogables por otros 60.</p>
-                </div>
-                <div class="card reveal">
-                    <h3>Metodología</h3>
-                    <p>Nuestro enfoque combina estos marcos regulatorios con metodologías de
-                        investigación de vanguardia, análisis estadístico y modelamiento para
-                        proporcionar evidencia robusta y recomendaciones prácticas.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Sección de valores que destaca nuestras fortalezas -->
-        <section id="valores" class="section values">
-            <h2>Por qué elegirnos</h2>
-            <div class="cards">
-                <div class="card reveal">
-                    <i class="fa-solid fa-leaf" aria-hidden="true"></i>
-                    <h3>Enfoque sostenible</h3>
-                    <p>Priorizamos soluciones que protegen el medio ambiente y promueven la
-                        sostenibilidad a largo plazo.</p>
-                </div>
-                <div class="card reveal">
-                    <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
-                    <h3>Rigor científico</h3>
-                    <p>Nuestro trabajo se basa en análisis de datos y evidencia sólida para asegurar
-                        resultados confiables.</p>
-                </div>
-                <div class="card reveal">
-                    <i class="fa-solid fa-handshake-angle" aria-hidden="true"></i>
-                    <h3>Transparencia</h3>
-                    <p>Mantenemos una comunicación clara con nuestros clientes y partes interesadas
-                        durante todo el proceso.</p>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Sección de contacto con información y formulario -->
-    <section id="contacto" class="section contact">
-        <h2>Contacto</h2>
-        <div class="contact-wrapper">
-            <div class="contact-info">
-                <p>
-                    Para consultas sobre nuestros servicios o solicitudes de colaboración, escríbenos a
-                    <a href="mailto:contacto@greenevidence.com">contacto@greenevidence.com</a> o visita
-                    nuestro perfil en
-                    <a href="https://www.linkedin.com/company/110666157" target="_blank">LinkedIn</a>.
-                    Estamos ubicados en Santiago, Chile, y trabajamos con clientes de América Latina y
-                    otras regiones.
-                </p>
-                <ul class="social-links">
-                    <li><a href="mailto:contacto@greenevidence.com" aria-label="Enviar correo"><i class="fa-solid fa-envelope"></i></a></li>
-                    <li><a href="https://www.linkedin.com/company/110666157" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
-                </ul>
-            </div>
-            <!-- Formulario de contacto: actualizamos el correo electrónico a dominio .com -->
-            <form class="contact-form" action="mailto:contacto@greenevidence.com" method="post" enctype="text/plain">
-                <div class="form-group">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Correo electrónico</label>
-                    <input type="email" id="email" name="email" placeholder="correo@example.com" required>
-                </div>
-                <div class="form-group">
-                    <label for="mensaje">Mensaje</label>
-                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje" required></textarea>
-                </div>
-                <button type="submit" class="btn">Enviar mensaje</button>
-            </form>
+    <section id="servicios">
+      <h2 class="section-title">Servicios</h2>
+      <div class="services">
+        <div class="service-card">
+          <h3>Medición de impactos ambientales</h3>
+          <p>
+            Evaluamos proyectos y políticas para cuantificar sus efectos sobre
+            ecosistemas y comunidades, proporcionando indicadores sólidos y
+            trazables.
+          </p>
         </div>
+        <div class="service-card">
+          <h3>Evaluación de políticas públicas</h3>
+          <p>
+            Aplicamos análisis econométricos y de ciencia de datos para
+            determinar la eficacia de instrumentos regulatorios y programas
+            ambientales.
+          </p>
+        </div>
+        <div class="service-card">
+          <h3>Estrategias de sostenibilidad</h3>
+          <p>
+            Diseñamos y asesoramos en estrategias corporativas para mejorar el
+            desempeño ambiental y social de las organizaciones.
+          </p>
+        </div>
+      </div>
     </section>
 
-    <footer>
-        <p>&copy; 2026 Green Evidence. Todos los derechos reservados.</p>
+    <section id="metodos">
+      <h2 class="section-title">Métodos y enfoques</h2>
+      <div class="methods">
+        <p>
+          Nuestro trabajo se sustenta en metodologías de análisis econométrico,
+          ciencia de datos e inteligencia artificial. Utilizamos modelos
+          estadísticos avanzados, aprendizaje automático y sistemas de
+          información geográfica para integrar múltiples fuentes de datos y
+          ofrecer diagnósticos precisos. Estas técnicas nos permiten
+          identificar patrones, predecir tendencias y evaluar la efectividad de
+          intervenciones ambientales.
+        </p>
+      </div>
+    </section>
+
+    <section id="por-que">
+      <h2 class="section-title">¿Por qué elegir GreenEvidence?</h2>
+      <div class="reasons">
+        <div class="reason-item">
+          <h3>Rigor científico</h3>
+          <p>
+            Combinamos econometría y ciencia de datos para producir
+            evaluaciones basadas en evidencia y respaldadas por literatura
+            académica.
+          </p>
+        </div>
+        <div class="reason-item">
+          <h3>Enfoque sostenible</h3>
+          <p>
+            Nuestra perspectiva integra las dimensiones ecológica, social y
+            económica, promoviendo soluciones duraderas y equitativas.
+          </p>
+        </div>
+        <div class="reason-item">
+          <h3>Transparencia</h3>
+          <p>
+            Presentamos metodologías, datos y resultados de manera clara para
+            que nuestros clientes comprendan y confíen en nuestras
+            recomendaciones.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <h2 class="section-title">Contacto</h2>
+      <p>Para más información o para solicitar una propuesta, completa el siguiente formulario:</p>
+      <form action="#" method="post">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required />
+
+        <label for="correo">Correo electrónico</label>
+        <input type="email" id="correo" name="correo" required />
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <footer style="text-align: center; padding: 1.5rem; background-color: var(--primary-dark); color: var(--light);">
+      <p>© 2026 GreenEvidence. Todos los derechos reservados.</p>
     </footer>
-
-    <!-- Script para animar las secciones al hacer scroll -->
-    <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('active');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.1 });
-        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-    });
-    </script>
-</body>
+  </body>
 </html>
