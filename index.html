@@ -5,117 +5,213 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Green Evidence – Evaluación Ambiental Basada en Evidencia</title>
+    <!-- Meta descripción para motores de búsqueda y redes sociales -->
+    <meta name="description" content="GreenEvidence es una plataforma de evaluación y consultoría ambiental especializada en la medición de impactos ambientales, políticas públicas y estrategias corporativas de sostenibilidad. Integramos análisis econométrico, ciencia de datos e inteligencia artificial para convertir datos ambientales complejos en evidencia útil para la toma de decisiones.">
+    <!-- Hoja de estilos personalizada -->
     <link rel="stylesheet" href="style.css">
+    <!-- Fuente profesional para una lectura clara -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Import a clean, professional typeface for readability -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Iconos de Font Awesome para enriquecer el diseño -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-o4SSdJlF46kppfkoIoVKa8RnBdln/6q46yK+P1GGsE8OweczO4fS2SyG/Z2L6NQ5ri3kSajUpRSE7UprrAH6Ug==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <!-- Barra de navegación fija con logotipo y enlaces -->
     <header>
         <nav class="navbar">
-            <div class="brand">Green Evidence</div>
+            <div class="logo-area">
+                <img src="logo.png" alt="Logo de Green Evidence" class="logo-img">
+                <span class="brand">Green Evidence</span>
+            </div>
             <ul class="nav-links">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#servicios">Servicios</a></li>
                 <li><a href="#metodos">Métodos</a></li>
+                <li><a href="#valores">Valores</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Hero section introduces the organisation with a striking visual -->
+    <!-- Sección de bienvenida con imagen de fondo y llamada a la acción -->
     <section id="inicio" class="hero">
-        <div class="hero-content">
-            <h1>Evaluación Ambiental Basada en Evidencia</h1>
+        <div class="hero-inner">
+            <h1>Transformamos datos ambientales en evidencia</h1>
             <p>
-                Green Evidence es un emprendimiento que integra investigación científica
-                y análisis de datos para apoyar a organizaciones, empresas y eventos en
-                la cuantificación rigurosa de sus impactos ambientales. Nuestra misión
-                es proporcionar información creíble y metodológicamente sólida para
-                facilitar decisiones sostenibles y responsables.
+                Nuestro equipo de economistas, ingenieros y científicos de datos combina la investigación
+                científica con métodos cuantitativos avanzados para medir el impacto ambiental de
+                proyectos, políticas públicas y estrategias corporativas. Entregamos información clara y
+                precisa para apoyar decisiones sostenibles y responsables.
             </p>
-        </div>
-        <div class="hero-image">
-            <img src="hero.png" alt="Ilustración de hojas y engranajes que simboliza tecnología y sostenibilidad" />
+            <a href="#servicios" class="btn">Conoce nuestros servicios</a>
         </div>
     </section>
 
-    <!-- Services section explains what the venture offers -->
-    <section id="servicios" class="section">
-        <h2>Servicios</h2>
-        <p>
-            Ofrecemos asesoría técnica y académica para la evaluación del impacto
-            ambiental de proyectos y políticas públicas. Nuestros servicios incluyen:
-        </p>
-        <ul>
-            <li><strong>Análisis de Estudios y Declaraciones de Impacto Ambiental</strong> –
-                revisamos y elaboramos Estudios de Impacto Ambiental (EIA) y
-                Declaraciones de Impacto Ambiental (DIA) de acuerdo con los
-                requisitos establecidos por el Sistema de Evaluación de Impacto
-                Ambiental (SEIA) de Chile.</li>
-            <li><strong>Evaluación de políticas ambientales</strong> – aplicamos métodos
-                cuantitativos y cualitativos para medir los efectos de políticas y
-                programas ambientales, considerando las normas vigentes y las
-                mejores prácticas internacionales.</li>
-            <li><strong>Capacitación y talleres</strong> – diseñamos cursos y talleres sobre
-                evaluación ambiental, participación ciudadana y consulta indígena
-                para profesionales y organizaciones interesadas en fortalecer sus
-                capacidades.</li>
-            <li><strong>Reportes y divulgación</strong> – elaboramos informes técnicos y
-                académicos con lenguaje científico claro que facilitan la toma de
-                decisiones informadas y la comunicación con las partes
-                interesadas.</li>
-        </ul>
-    </section>
+    <main>
+        <!-- Resumen de la organización -->
+        <section id="resumen" class="section summary">
+            <h2>Resumen</h2>
+            <p>
+                GreenEvidence es una plataforma de evaluación y consultoría ambiental, especializada en la medición de
+                impactos ambientales, políticas públicas y estrategias corporativas de sostenibilidad. La
+                organización integra metodologías de análisis econométrico, ciencia de datos e inteligencia
+                artificial para transformar información ambiental compleja en evidencia útil para la toma de
+                decisiones.
+            </p>
+        </section>
+        <!-- Servicios ofrecidos representados en tarjetas con iconos -->
+        <section id="servicios" class="section services">
+            <h2>Servicios</h2>
+            <p>
+                Ofrecemos asesoría técnica y académica para la evaluación del impacto ambiental de proyectos
+                y políticas públicas. Nuestros servicios incluyen:
+            </p>
+            <div class="cards">
+                <div class="card reveal">
+                    <i class="fa-solid fa-file-lines" aria-hidden="true"></i>
+                    <h3>Análisis de EIA y DIA</h3>
+                    <p>Revisamos y elaboramos Estudios de Impacto Ambiental (EIA) y Declaraciones de
+                        Impacto Ambiental (DIA) conforme a los requisitos del Sistema de Evaluación de
+                        Impacto Ambiental de Chile.</p>
+                </div>
+                <div class="card reveal">
+                    <i class="fa-solid fa-scale-balanced" aria-hidden="true"></i>
+                    <h3>Evaluación de políticas</h3>
+                    <p>Aplicamos métodos cuantitativos y cualitativos para medir los efectos de políticas
+                        y programas ambientales, considerando normas vigentes y mejores prácticas
+                        internacionales.</p>
+                </div>
+                <div class="card reveal">
+                    <i class="fa-solid fa-chalkboard-teacher" aria-hidden="true"></i>
+                    <h3>Capacitación y talleres</h3>
+                    <p>Diseñamos cursos y talleres sobre evaluación ambiental, participación ciudadana y
+                        consulta indígena para fortalecer capacidades profesionales.</p>
+                </div>
+                <div class="card reveal">
+                    <i class="fa-solid fa-file-contract" aria-hidden="true"></i>
+                    <h3>Reportes y divulgación</h3>
+                    <p>Elaboramos informes técnicos y académicos con lenguaje claro que facilitan la
+                        toma de decisiones y la comunicación con las partes interesadas.</p>
+                </div>
+            </div>
+        </section>
 
-    <!-- Methods section summarises the underlying regulatory framework and methodologies -->
-    <section id="metodos" class="section">
-        <h2>Métodos</h2>
-        <p>
-            La evaluación del impacto ambiental en Chile está regulada por el
-            Sistema de Evaluación de Impacto Ambiental (SEIA). Este sistema es un
-            instrumento de gestión ambiental de carácter preventivo que, mediante un
-            procedimiento administrado por el Servicio de Evaluación Ambiental,
-            determina si el impacto ambiental de una actividad o proyecto se ajusta
-            a las normas vigentes【307956543129631†L92-L102】. Los proyectos con
-            impactos significativos se someten a un Estudio de Impacto Ambiental
-            (EIA), mientras que los demás ingresan como Declaraciones de Impacto
-            Ambiental (DIA)【307956543129631†L111-L115】.
-        </p>
-        <p>
-            En los EIA se exige siempre un período de participación ciudadana (PAC)
-            y, cuando corresponde, una consulta a pueblos indígenas. En cambio, las
-            DIA solo incluyen participación ciudadana si la ciudadanía lo
-            solicita y la autoridad lo dispone【307956543129631†L120-L124】. La
-            diferencia también se refleja en los plazos de evaluación: las DIA
-            se revisan en 60 días con posibilidad de ampliación a 30 días, mientras
-            que los EIA disponen de 120 días prorrogables por otros 60【379799934252724†L112-L123】.
-        </p>
-        <p>
-            Nuestro enfoque combina estos marcos regulatorios con metodologías de
-            investigación de vanguardia, análisis estadístico y modelamiento para
-            proporcionar evidencia robusta y recomendaciones prácticas. Cada
-            estudio se adapta a las características del proyecto o política,
-            considerando variables ambientales, sociales y económicas.
-        </p>
-    </section>
+        <!-- Sección que resume el marco regulatorio y nuestras metodologías -->
+        <section id="metodos" class="section methods">
+            <h2>Métodos</h2>
+            <p>
+                La evaluación del impacto ambiental en Chile está regulada por el
+                Sistema de Evaluación de Impacto Ambiental (SEIA). Este sistema es un instrumento de
+                gestión ambiental de carácter preventivo que, mediante un procedimiento administrado
+                por el Servicio de Evaluación Ambiental, determina si el impacto ambiental de una
+                actividad o proyecto se ajusta a las normas vigentes【307956543129631†L92-L102】.
+                Los proyectos con impactos significativos se someten a un Estudio de Impacto Ambiental
+                (EIA), mientras que los demás ingresan como Declaraciones de Impacto Ambiental
+                (DIA)【307956543129631†L111-L115】.
+            </p>
+            <div class="cards">
+                <div class="card reveal">
+                    <h3>Participación</h3>
+                    <p>En los EIA se exige siempre un período de participación ciudadana (PAC) y,
+                        cuando corresponde, una consulta a pueblos indígenas. En cambio, las DIA
+                        solo incluyen participación ciudadana si la ciudadanía lo solicita y la
+                        autoridad lo dispone【307956543129631†L120-L124】.</p>
+                </div>
+                <div class="card reveal">
+                    <h3>Plazos de evaluación</h3>
+                    <p>Las DIA se revisan en 60 días con posibilidad de ampliación a 30 días, mientras
+                        que los EIA disponen de 120 días prorrogables por otros 60【379799934252724†L112-L123】.</p>
+                </div>
+                <div class="card reveal">
+                    <h3>Metodología</h3>
+                    <p>Nuestro enfoque combina estos marcos regulatorios con metodologías de
+                        investigación de vanguardia, análisis estadístico y modelamiento para
+                        proporcionar evidencia robusta y recomendaciones prácticas.</p>
+                </div>
+            </div>
+        </section>
 
-    <!-- Contact section provides a way for clients to reach out -->
+        <!-- Sección de valores que destaca nuestras fortalezas -->
+        <section id="valores" class="section values">
+            <h2>Por qué elegirnos</h2>
+            <div class="cards">
+                <div class="card reveal">
+                    <i class="fa-solid fa-leaf" aria-hidden="true"></i>
+                    <h3>Enfoque sostenible</h3>
+                    <p>Priorizamos soluciones que protegen el medio ambiente y promueven la
+                        sostenibilidad a largo plazo.</p>
+                </div>
+                <div class="card reveal">
+                    <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+                    <h3>Rigor científico</h3>
+                    <p>Nuestro trabajo se basa en análisis de datos y evidencia sólida para asegurar
+                        resultados confiables.</p>
+                </div>
+                <div class="card reveal">
+                    <i class="fa-solid fa-handshake-angle" aria-hidden="true"></i>
+                    <h3>Transparencia</h3>
+                    <p>Mantenemos una comunicación clara con nuestros clientes y partes interesadas
+                        durante todo el proceso.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Sección de contacto con información y formulario -->
     <section id="contacto" class="section contact">
         <h2>Contacto</h2>
-        <p>
-            Para consultas sobre nuestros servicios o solicitudes de colaboración,
-            escríbenos a <a href="mailto:contacto@greenevidence.cl">contacto@greenevidence.cl</a>
-            o visita nuestro perfil en
-            <a href="https://www.linkedin.com">LinkedIn</a>. Estamos ubicados en
-            Santiago, Chile, y trabajamos con clientes de América Latina y
-            otras regiones.
-        </p>
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <p>
+                    Para consultas sobre nuestros servicios o solicitudes de colaboración, escríbenos a
+                    <a href="mailto:contacto@greenevidence.com">contacto@greenevidence.com</a> o visita
+                    nuestro perfil en
+                    <a href="https://www.linkedin.com/company/110666157" target="_blank">LinkedIn</a>.
+                    Estamos ubicados en Santiago, Chile, y trabajamos con clientes de América Latina y
+                    otras regiones.
+                </p>
+                <ul class="social-links">
+                    <li><a href="mailto:contacto@greenevidence.com" aria-label="Enviar correo"><i class="fa-solid fa-envelope"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/110666157" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+            <!-- Formulario de contacto: actualizamos el correo electrónico a dominio .com -->
+            <form class="contact-form" action="mailto:contacto@greenevidence.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="correo@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje" required></textarea>
+                </div>
+                <button type="submit" class="btn">Enviar mensaje</button>
+            </form>
+        </div>
     </section>
 
     <footer>
         <p>&copy; 2026 Green Evidence. Todos los derechos reservados.</p>
     </footer>
+
+    <!-- Script para animar las secciones al hacer scroll -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    });
+    </script>
 </body>
 </html>
