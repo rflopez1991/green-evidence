@@ -1,311 +1,145 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GreenEvidence – Evaluación ambiental basada en datos</title>
-    <!--
-      Esta página es un prototipo que demuestra cómo podría estructurarse
-      y diseñarse el sitio de GreenEvidence siguiendo principios de
-      accesibilidad, claridad y profesionalismo. No incluye imágenes externas
-      ni recursos que requieran permisos, y utiliza una paleta de colores
-      de alto contraste para asegurar una lectura confortable.
-    -->
-    <style>
-      /* Paleta de colores accesibles */
-      :root {
-        --primary-dark: #014d40;
-        --primary: #05676e;
-        --secondary: #028090;
-        --background: #f7fdfd;
-        --light: #ffffff;
-        --text-dark: #052d26;
-      }
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenEvidence</title>
+  <link rel="stylesheet" href="greenevidence-theme.css">
+  <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-      body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        color: var(--text-dark);
-        background-color: var(--background);
-      }
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Transform Your Garden Into Paradise</h1>
+    <p>Professional gardening services that bring your outdoor vision to life. From design to maintenance, we create stunning landscapes that flourish year-round.</p>
+    <a href="#contact" class="btn">Get Free Quote</a>
+    <a href="#services" class="btn">Our Services</a>
+  </section>
 
-      header {
-        background-color: var(--primary-dark);
-        color: var(--light);
-        padding: 1.5rem;
-      }
+  <!-- Growing Dreams Section -->
+  <section id="about" class="panel">
+    <h2>Growing Dreams Since 2010</h2>
+    <p>At GreenEvidence, we believe every outdoor space has the potential to become something extraordinary. Our team of certified horticulturists and landscape designers brings over a decade of experience to every project.</p>
+    <p>From small urban gardens to expansive estate landscapes, we combine scientific expertise with artistic vision to create outdoor spaces that not only look beautiful but thrive in New York's unique climate.</p>
+    <p>Our commitment to sustainable practices and native plant integration ensures your garden will be both environmentally responsible and breathtakingly beautiful.</p>
+    <a href="#contact" class="btn">Start Your Project</a>
+  </section>
 
-      header h1 {
-        margin: 0;
-        font-size: 2rem;
-      }
+  <!-- Services Section -->
+  <section id="services" class="panel">
+    <h2>Our Expert Services</h2>
+    <p>Comprehensive gardening solutions tailored to your unique outdoor space and lifestyle needs</p>
+    <div class="service">
+      <h3>Landscape Design</h3>
+      <p>Custom landscape designs that reflect your style and complement your property's architecture while considering soil conditions and climate factors.</p>
+    </div>
+    <div class="service">
+      <h3>Garden Maintenance</h3>
+      <p>Regular maintenance services including pruning, fertilizing, pest control, and seasonal care to keep your garden healthy and vibrant.</p>
+    </div>
+    <div class="service">
+      <h3>Tree &amp; Shrub Care</h3>
+      <p>Professional tree and shrub services including planting, pruning, disease treatment, and removal with certified arborists.</p>
+    </div>
+    <div class="service">
+      <h3>Irrigation Systems</h3>
+      <p>Smart irrigation system design and installation to ensure efficient water usage and optimal plant health throughout the seasons.</p>
+    </div>
+    <div class="service">
+      <h3>Hardscaping</h3>
+      <p>Professional installation of patios, walkways, retaining walls, and outdoor living spaces that enhance your property's functionality.</p>
+    </div>
+    <div class="service">
+      <h3>Organic Solutions</h3>
+      <p>Eco-friendly gardening practices using organic fertilizers, natural pest control, and sustainable growing methods for healthier gardens.</p>
+    </div>
+  </section>
 
-      nav {
-        margin-top: 0.5rem;
-      }
+  <!-- Why Choose Us Section -->
+  <section class="panel">
+    <h2>Why Choose GreenEvidence?</h2>
+    <p>Experience the difference that expertise, passion, and dedication make in every garden project</p>
+    <div class="service">
+      <h3>Certified Experts</h3>
+      <p>Licensed horticulturists and certified landscape professionals with extensive training and experience</p>
+    </div>
+    <div class="service">
+      <h3>Eco-Friendly Practices</h3>
+      <p>Sustainable gardening methods that protect the environment while creating beautiful outdoor spaces</p>
+    </div>
+    <div class="service">
+      <h3>100% Satisfaction</h3>
+      <p>We guarantee your complete satisfaction with our work and stand behind every project we complete</p>
+    </div>
+    <div class="service">
+      <h3>24/7 Support</h3>
+      <p>Always available for emergency services and ongoing support for all your gardening needs</p>
+    </div>
+  </section>
 
-      nav ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        gap: 1rem;
-      }
+  <!-- Testimonials Section -->
+  <section class="panel">
+    <h2>What Our Clients Say</h2>
+    <div class="service">
+      <p><strong>Sarah Johnson</strong> &ndash; Manhattan Homeowner</p>
+      <p>GreenEvidence transformed our backyard into an absolute paradise. Their attention to detail and plant knowledge is incredible. We now have a garden that blooms beautifully through all seasons!</p>
+    </div>
+    <div class="service">
+      <p><strong>Michael Chen</strong> &ndash; Brooklyn Business Owner</p>
+      <p>Professional, reliable, and incredibly knowledgeable. They designed and installed our entire landscape, and it's been thriving for three years now. Highly recommend their services!</p>
+    </div>
+    <div class="service">
+      <p><strong>Emma Rodriguez</strong> &ndash; Queens Family</p>
+      <p>Their organic approach to gardening was exactly what we were looking for. Our children can play safely in the garden while we enjoy beautiful, healthy plants year-round.</p>
+    </div>
+  </section>
 
-      nav a {
-        color: var(--light);
-        text-decoration: none;
-        font-weight: bold;
-        padding: 0.25rem 0.5rem;
-      }
+  <!-- Contact Section -->
+  <section id="contact" class="panel">
+    <h2>Get Your Free Consultation</h2>
+    <p>Ready to transform your outdoor space? Contact us today for a personalized consultation and quote</p>
+    <h3>Get In Touch</h3>
+    <p>Address:<br>5334 Business Street<br>New York, United States</p>
+    <p>Phone:<br>+1 (225) 861-1430</p>
+    <p>Hours:<br>Mon-Fri: 7:00 AM - 6:00 PM<br>Sat: 8:00 AM - 4:00 PM<br>Sun: Emergency Services Only</p>
+    <p>Service Areas:<br>Manhattan, Brooklyn, Queens,<br>Bronx, Staten Island</p>
+    <!-- Simple contact form placeholder -->
+    <form action="#" method="post">
+      <label for="name">Full Name *</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+      <label for="email">Email Address *</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+      <label for="phone">Phone Number</label><br>
+      <input type="tel" id="phone" name="phone"><br><br>
+      <label for="service">Service Needed</label><br>
+      <select id="service" name="service">
+        <option value="Landscape Design">Landscape Design</option>
+        <option value="Garden Maintenance">Garden Maintenance</option>
+        <option value="Tree &amp; Shrub Care">Tree &amp; Shrub Care</option>
+        <option value="Irrigation Systems">Irrigation Systems</option>
+        <option value="Hardscaping">Hardscaping</option>
+        <option value="Free Consultation">Free Consultation</option>
+      </select><br><br>
+      <label for="details">Project Details *</label><br>
+      <textarea id="details" name="details" rows="4" required></textarea><br><br>
+      <button type="submit" class="btn">Send Message &amp; Get Free Quote</button>
+    </form>
+  </section>
 
-      nav a:hover,
-      nav a:focus {
-        text-decoration: underline;
-      }
-
-      .hero {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 4rem 1rem;
-        text-align: center;
-        background-image: linear-gradient(to right, var(--primary), var(--secondary));
-        color: var(--light);
-      }
-
-      .hero h2 {
-        margin: 0 0 1rem;
-        font-size: 2.5rem;
-      }
-
-      .hero p {
-        font-size: 1.2rem;
-        max-width: 600px;
-        margin: 0 auto 1.5rem;
-      }
-
-      .cta-button {
-        background-color: var(--light);
-        color: var(--primary-dark);
-        border: none;
-        padding: 0.75rem 1.5rem;
-        font-size: 1rem;
-        font-weight: bold;
-        border-radius: 4px;
-        cursor: pointer;
-      }
-
-      .cta-button:hover,
-      .cta-button:focus {
-        background-color: #e4f2f1;
-      }
-
-      section {
-        padding: 3rem 1rem;
-        max-width: 960px;
-        margin: 0 auto;
-      }
-
-      .section-title {
-        font-size: 1.8rem;
-        margin-bottom: 1.5rem;
-        text-align: center;
-        color: var(--primary-dark);
-      }
-
-      .services {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-        gap: 1.5rem;
-      }
-
-      .service-card {
-        background-color: var(--light);
-        border: 1px solid #dbe5e5;
-        border-radius: 6px;
-        padding: 1.5rem;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-      }
-
-      .service-card h3 {
-        margin-top: 0;
-        color: var(--primary);
-      }
-
-      .methods {
-        background-color: var(--light);
-        border-radius: 6px;
-        padding: 2rem;
-      }
-
-      .reasons {
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-      }
-
-      .reason-item {
-        background-color: var(--light);
-        border: 1px solid #dbe5e5;
-        border-radius: 6px;
-        padding: 1.5rem;
-      }
-
-      form {
-        display: grid;
-        gap: 1rem;
-      }
-
-      form label {
-        font-weight: bold;
-      }
-
-      form input,
-      form textarea {
-        width: 100%;
-        padding: 0.5rem;
-        border: 1px solid #c3d4d5;
-        border-radius: 4px;
-        font-size: 1rem;
-      }
-
-      form button {
-        background-color: var(--primary);
-        color: var(--light);
-        border: none;
-        padding: 0.75rem 1.5rem;
-        font-size: 1rem;
-        border-radius: 4px;
-        cursor: pointer;
-      }
-
-      form button:hover,
-      form button:focus {
-        background-color: var(--secondary);
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>GreenEvidence</h1>
-      <nav>
-        <ul>
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#servicios">Servicios</a></li>
-          <li><a href="#metodos">Métodos</a></li>
-          <li><a href="#por-que">¿Por qué elegirnos?</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <section id="inicio" class="hero" role="banner">
-      <h2>Transformamos datos ambientales en evidencia</h2>
-      <p>
-        Somos una plataforma de evaluación y consultoría ambiental especializada en
-        la medición de impactos ambientales, políticas públicas y estrategias
-        corporativas de sostenibilidad. Integramos econometría, ciencia de
-        datos e inteligencia artificial para convertir información compleja en
-        decisiones informadas.
-      </p>
-      <button class="cta-button" onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})">Solicitar asesoría</button>
-    </section>
-
-    <section id="servicios">
-      <h2 class="section-title">Servicios</h2>
-      <div class="services">
-        <div class="service-card">
-          <h3>Medición de impactos ambientales</h3>
-          <p>
-            Evaluamos proyectos y políticas para cuantificar sus efectos sobre
-            ecosistemas y comunidades, proporcionando indicadores sólidos y
-            trazables.
-          </p>
-        </div>
-        <div class="service-card">
-          <h3>Evaluación de políticas públicas</h3>
-          <p>
-            Aplicamos análisis econométricos y de ciencia de datos para
-            determinar la eficacia de instrumentos regulatorios y programas
-            ambientales.
-          </p>
-        </div>
-        <div class="service-card">
-          <h3>Estrategias de sostenibilidad</h3>
-          <p>
-            Diseñamos y asesoramos en estrategias corporativas para mejorar el
-            desempeño ambiental y social de las organizaciones.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="metodos">
-      <h2 class="section-title">Métodos y enfoques</h2>
-      <div class="methods">
-        <p>
-          Nuestro trabajo se sustenta en metodologías de análisis econométrico,
-          ciencia de datos e inteligencia artificial. Utilizamos modelos
-          estadísticos avanzados, aprendizaje automático y sistemas de
-          información geográfica para integrar múltiples fuentes de datos y
-          ofrecer diagnósticos precisos. Estas técnicas nos permiten
-          identificar patrones, predecir tendencias y evaluar la efectividad de
-          intervenciones ambientales.
-        </p>
-      </div>
-    </section>
-
-    <section id="por-que">
-      <h2 class="section-title">¿Por qué elegir GreenEvidence?</h2>
-      <div class="reasons">
-        <div class="reason-item">
-          <h3>Rigor científico</h3>
-          <p>
-            Combinamos econometría y ciencia de datos para producir
-            evaluaciones basadas en evidencia y respaldadas por literatura
-            académica.
-          </p>
-        </div>
-        <div class="reason-item">
-          <h3>Enfoque sostenible</h3>
-          <p>
-            Nuestra perspectiva integra las dimensiones ecológica, social y
-            económica, promoviendo soluciones duraderas y equitativas.
-          </p>
-        </div>
-        <div class="reason-item">
-          <h3>Transparencia</h3>
-          <p>
-            Presentamos metodologías, datos y resultados de manera clara para
-            que nuestros clientes comprendan y confíen en nuestras
-            recomendaciones.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="contacto">
-      <h2 class="section-title">Contacto</h2>
-      <p>Para más información o para solicitar una propuesta, completa el siguiente formulario:</p>
-      <form action="#" method="post">
-        <label for="nombre">Nombre</label>
-        <input type="text" id="nombre" name="nombre" required />
-
-        <label for="correo">Correo electrónico</label>
-        <input type="email" id="correo" name="correo" required />
-
-        <label for="mensaje">Mensaje</label>
-        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-
-        <button type="submit">Enviar</button>
-      </form>
-    </section>
-
-    <footer style="text-align: center; padding: 1.5rem; background-color: var(--primary-dark); color: var(--light);">
-      <p>© 2026 GreenEvidence. Todos los derechos reservados.</p>
-    </footer>
-  </body>
+  <!-- Footer -->
+  <footer>
+    <p><strong>GreenEvidence</strong></p>
+    <p>Professional gardening services transforming outdoor spaces across New York. Creating beautiful, sustainable landscapes since 2010.</p>
+    <p>Licensed &amp; Insured<br>NY Landscape License #GL-2024-5334</p>
+    <p>&copy; 2024 GreenEvidence. All rights reserved. | Licensed Professional Gardening Services | Privacy Policy | Terms of Service</p>
+  </footer>
+</body>
 </html>
