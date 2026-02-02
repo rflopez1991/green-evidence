@@ -1,0 +1,173 @@
+/*
+ * Estilos para el sitio web de Green Evidence
+ *
+ * Este archivo define una apariencia moderna y profesional con un
+ * esquema de colores orientado a la sostenibilidad. Utiliza la fuente
+ * Inter para mejorar la legibilidad en pantallas.
+ */
+
+/* Variables de color para una fácil personalización */
+:root {
+    --color-primary: #2a8c55;      /* Verde oscuro para encabezados y botones */
+    --color-secondary: #6dbf8b;    /* Verde medio para elementos de apoyo */
+    --color-accent: #15664f;       /* Verde intenso para detalles */
+    --color-background: #f7faf8;   /* Fondo claro y neutro */
+    --color-text: #2b2b2b;         /* Color principal del texto */
+    --color-muted: #6a6a6a;        /* Texto secundario */
+}
+
+/* Configuración general */
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+h1, h2 {
+    color: var(--color-primary);
+    margin-top: 0;
+}
+
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* Navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--color-primary);
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar .brand {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+.navbar .nav-links li a {
+    color: #fff;
+    font-weight: 500;
+    transition: opacity 0.2s;
+}
+.navbar .nav-links li a:hover {
+    opacity: 0.8;
+}
+
+/* Hero */
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, var(--color-secondary), var(--color-primary));
+    color: #fff;
+}
+.hero-content {
+    flex: 1;
+    min-width: 280px;
+}
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.hero-content p {
+    max-width: 600px;
+    font-size: 1rem;
+}
+.hero-image {
+    flex: 1;
+    text-align: center;
+    min-width: 280px;
+}
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Secciones */
+.section {
+    padding: 3rem 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.section h2 {
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+    border-bottom: 2px solid var(--color-secondary);
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+.section p {
+    margin-bottom: 1rem;
+    color: var(--color-muted);
+}
+.section ul {
+    list-style: none;
+    padding-left: 0;
+}
+.section li {
+    margin-bottom: 0.75rem;
+    padding-left: 1.25rem;
+    position: relative;
+}
+.section li::before {
+    content: '\2022'; /* Bullet symbol */
+    position: absolute;
+    left: 0;
+    top: 0.1rem;
+    color: var(--color-accent);
+    font-size: 1.2rem;
+}
+
+/* Contacto */
+.contact a {
+    color: var(--color-accent);
+    font-weight: 600;
+}
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 1rem 2rem;
+    background-color: var(--color-primary);
+    color: #fff;
+}
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Adaptación a pantallas pequeñas */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    .hero-content p {
+        font-size: 0.95rem;
+    }
+}
