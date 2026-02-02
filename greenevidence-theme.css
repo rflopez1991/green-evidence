@@ -1,0 +1,131 @@
+/*
+  Greenevidence Website Color Update
+
+  This stylesheet defines a fresh colour palette derived from the
+  supplied logos and hero graphic. It aims to give the site a
+  cohesive look inspired by shades of green and teal found in the
+  GreenEvidence branding. Keep the existing HTML structure and
+  typography; only colours and backgrounds are changed.  If your
+  project uses different class names, adjust the selectors below
+  accordingly.
+
+  Generated on 2026‑02‑02
+*/
+
+:root {
+  /* Primary palette extracted from the hero image and logo */
+  --primary-colour: #158eae;    /* teal from hero wave */
+  --secondary-colour: #34a63a;  /* fresh green */
+  --accent-colour: #78d3d8;     /* light turquoise highlight */
+  --dark-colour: #00477a;       /* deep blue from the logo */
+  --light-background: #ecf8f6;  /* very light teal for backgrounds */
+  --text-colour: #113a2e;       /* dark greenish tone for body text */
+}
+
+/* Overall body styling */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--light-background);
+  color: var(--text-colour);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+/* Header & navigation */
+.header,
+.navbar {
+  background: linear-gradient(90deg, var(--dark-colour), var(--primary-colour));
+  color: #ffffff;
+  padding: 1rem 2rem;
+}
+
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+.navbar a:hover {
+  color: var(--accent-colour);
+}
+
+/* Hero section */
+.hero {
+  background-image: url('./hero-bg.png');
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.hero h1 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  color: #f5f5f5;
+}
+
+/* Buttons */
+.btn,
+.button,
+.cta-btn {
+  display: inline-block;
+  background: linear-gradient(90deg, var(--secondary-colour), var(--primary-colour));
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover,
+.button:hover,
+.cta-btn:hover {
+  background: linear-gradient(90deg, var(--primary-colour), var(--secondary-colour));
+}
+
+/* Section headings */
+h1, h2, h3 {
+  color: var(--dark-colour);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Cards or panels */
+.card,
+.panel,
+.service {
+  background-color: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  margin: 1rem 0;
+}
+
+/* Footer */
+footer {
+  background: var(--dark-colour);
+  color: #ffffff;
+  padding: 2rem;
+  text-align: center;
+  font-size: 0.875rem;
+}
+
+footer a {
+  color: var(--accent-colour);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
