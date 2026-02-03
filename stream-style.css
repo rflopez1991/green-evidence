@@ -1,0 +1,472 @@
+/*
+  Estilos inspirados en el diseño moderno de streamdata.cl adaptado a
+  la identidad de GreenEvidence. Se utiliza una paleta de colores propia
+  (azules y verdes) y se prioriza la claridad, el espacio en blanco y
+  las micro‑interacciones para una navegación atractiva y funcional.
+*/
+
+/* Variables de color */
+:root {
+  --primary: #158eae;     /* Azul verdoso: confianza y tecnología */
+  --secondary: #34a63a;   /* Verde fresco: sostenibilidad */
+  --accent: #78d3d8;      /* Turquesa claro para detalles */
+  --dark: #00477a;        /* Azul oscuro para secciones y texto en negativo */
+  --light: #ecf8f6;       /* Fondo claro predominante */
+  --text: #113a2e;        /* Texto principal en secciones claras */
+  --card: #ffffff;        /* Tarjetas claras */
+  --muted: #6a6a6a;       /* Texto secundario */
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+/* Configuración global */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  color: var(--text);
+  background-color: var(--light);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Barra de navegación */
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 4px var(--shadow);
+  z-index: 100;
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navbar .logo img {
+  width: 40px;
+  height: 40px;
+}
+
+.navbar .wordmark {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--dark);
+}
+
+.navbar .menu ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar .menu a {
+  font-weight: 600;
+  color: var(--dark);
+  padding: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.navbar .menu a:hover,
+.navbar .menu a:focus {
+  color: var(--primary);
+}
+
+.nav-cta {
+  background-color: var(--secondary);
+  color: var(--light);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-cta:hover,
+.nav-cta:focus {
+  background-color: var(--primary);
+  transform: translateY(-2px);
+}
+
+/* Hero principal */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 1rem;
+  background-color: var(--light);
+  overflow: hidden;
+  color: var(--dark);
+}
+
+/* Formas decorativas en el hero */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    radial-gradient(circle at 25% 30%, rgba(21, 142, 174, 0.3), transparent 60%),
+    radial-gradient(circle at 80% 70%, rgba(52, 166, 58, 0.3), transparent 60%);
+  z-index: -1;
+}
+
+.hero .hero-content h1 {
+  font-size: 2.8rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.hero .hero-content .highlight {
+  color: var(--primary);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 650px;
+  margin: 0 auto 2rem auto;
+  color: var(--text);
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: var(--secondary);
+  color: var(--light);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover,
+.cta-button:focus {
+  background-color: var(--primary);
+  transform: translateY(-3px);
+}
+
+/* Sección de soluciones */
+.soluciones {
+  padding: 4rem 1rem;
+  background-color: var(--light);
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.section-title .highlight {
+  color: var(--primary);
+}
+
+.section-subtitle {
+  max-width: 700px;
+  margin: 0 auto 3rem auto;
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.soluciones-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.solucion-card {
+  background-color: var(--card);
+  border: 1px solid #d6e5e5;
+  border-radius: 8px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.solucion-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.icon-wrapper {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1rem;
+}
+
+.icon-wrapper img {
+  width: 100%;
+  height: 100%;
+}
+
+.solucion-card h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+  color: var(--primary);
+}
+
+.solucion-card p {
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+/* Sección de proceso */
+.proceso {
+  padding: 4rem 1rem;
+  background-color: var(--dark);
+  color: var(--light);
+  text-align: center;
+}
+
+.proceso .section-title {
+  color: var(--light);
+}
+
+.pasos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.paso {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 2rem 1.5rem;
+  text-align: left;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.paso:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.numero {
+  background-color: var(--primary);
+  color: var(--light);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.paso h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+  color: var(--accent);
+}
+
+.paso p {
+  font-size: 1rem;
+  color: var(--light);
+  opacity: 0.9;
+}
+
+.cta-secondary {
+  display: inline-block;
+  margin-top: 3rem;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid var(--primary);
+  color: var(--light);
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta-secondary:hover,
+.cta-secondary:focus {
+  background-color: var(--primary);
+  color: var(--light);
+}
+
+/* Sección de razones */
+.razones {
+  padding: 4rem 1rem;
+  background-color: var(--light);
+}
+
+.razones .section-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--dark);
+}
+
+.razones-list {
+  list-style: none;
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.razones-list li {
+  background-color: var(--card);
+  border: 1px solid #d6e5e5;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.razones-list li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.razones-list strong {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+  color: var(--primary);
+}
+
+.razones-list p {
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+/* Sección de contacto */
+.contacto {
+  background-color: var(--dark);
+  color: var(--light);
+  padding: 4rem 1rem;
+}
+
+.contacto-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.contacto-info h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: var(--primary);
+}
+
+.contacto-info p {
+  margin-bottom: 1rem;
+  color: var(--light);
+  opacity: 0.9;
+  font-size: 1rem;
+}
+
+.contacto-form {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.contacto-form label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+  color: var(--light);
+}
+
+.contacto-form input,
+.contacto-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--light);
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.contacto-form textarea {
+  resize: vertical;
+  height: 120px;
+}
+
+.contacto-form button {
+  background-color: var(--secondary);
+  color: var(--light);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contacto-form button:hover,
+.contacto-form button:focus {
+  background-color: var(--primary);
+  transform: translateY(-3px);
+}
+
+/* Pie de página */
+.footer {
+  background-color: var(--dark);
+  color: var(--muted);
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.875rem;
+}
+
+.footer p {
+  margin: 0;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .hero .hero-content h1 {
+    font-size: 2rem;
+  }
+  .navbar .menu ul {
+    gap: 1rem;
+  }
+  .navbar .menu a {
+    font-size: 0.9rem;
+  }
+  .nav-cta {
+    display: none; /* ocultar CTA en móviles para simplificar */
+  }
+}

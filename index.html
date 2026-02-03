@@ -3,127 +3,177 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GreenEvidence – Evaluación ambiental basada en datos</title>
-    <!-- Fuente moderna desde Google Fonts -->
+    <title>GreenEvidence – Datos ambientales transformados en evidencia</title>
+    <!-- Fuente moderna -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-    <!-- Icono de la pestaña -->
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="logo_modern_icon.png" />
-    <!-- Estilos principales -->
-    <link rel="stylesheet" href="modern-style.css" />
+    <!-- Hoja de estilos principal -->
+    <link rel="stylesheet" href="stream-style.css" />
   </head>
   <body>
-    <!-- Barra de navegación -->
+    <!-- Navegación superior -->
     <header class="navbar">
       <div class="logo">
         <img src="logo_modern_icon.png" alt="Logo de GreenEvidence" />
         <span class="wordmark">GreenEvidence</span>
       </div>
-      <nav>
+      <nav class="menu">
         <ul>
-          <li><a href="#hero">Inicio</a></li>
-          <li><a href="#servicios">Servicios</a></li>
-          <li><a href="#metodos">Métodos</a></li>
-          <li><a href="#por-que">¿Por qué elegirnos?</a></li>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#soluciones">Soluciones</a></li>
+          <li><a href="#proceso">Proceso</a></li>
+          <li><a href="#razones">¿Por qué elegirnos?</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
+      <a href="#contacto" class="nav-cta">Solicitar asesoría</a>
     </header>
 
-    <!-- Hero -->
-    <section id="hero" class="hero">
-      <h1>Transformamos datos ambientales en evidencia</h1>
-      <p>
-        Somos una plataforma de evaluación y consultoría ambiental especializada en
-        la medición de impactos ambientales, políticas públicas y estrategias de
-        sostenibilidad. Integramos econometría, ciencia de datos e inteligencia
-        artificial para convertir información compleja en decisiones informadas.
-      </p>
-      <a href="#contacto" class="cta-button">Solicitar asesoría</a>
+    <!-- Hero principal -->
+    <section id="inicio" class="hero">
+      <div class="hero-content">
+        <h1>
+          <span class="highlight">Transformamos</span>
+          <span>datos ambientales en evidencia</span>
+        </h1>
+        <p>
+          Somos una plataforma de evaluación y consultoría ambiental que integra
+          econometría, ciencia de datos e inteligencia artificial. Convertimos
+          información compleja en decisiones informadas para impulsar políticas
+          sostenibles.
+        </p>
+        <a href="#contacto" class="cta-button">Comenzar ahora</a>
+      </div>
     </section>
 
-    <!-- Servicios -->
-    <section id="servicios">
-      <h2 class="section-title">Servicios</h2>
-      <div class="services-grid">
-        <div class="service-card">
-          <img src="service_icon_1.png" alt="Evaluación de políticas" />
+    <!-- Sección de soluciones/servicios -->
+    <section id="soluciones" class="soluciones">
+      <h2 class="section-title">
+        <span class="highlight">Nuestras</span> Soluciones
+      </h2>
+      <p class="section-subtitle">
+        Ofrecemos un abanico de servicios para ayudarte a comprender y
+        mejorar tu impacto ambiental.
+      </p>
+      <div class="soluciones-grid">
+        <div class="solucion-card">
+          <div class="icon-wrapper">
+            <img src="service_icon_1.png" alt="Evaluación de políticas" />
+          </div>
           <h3>Evaluación de políticas</h3>
           <p>
-            Analizamos el impacto de políticas públicas utilizando técnicas
-            econométricas avanzadas para medir su eficacia y eficiencia.
+            Medimos el impacto de políticas públicas mediante técnicas
+            econométricas avanzadas para determinar su eficacia y eficiencia.
           </p>
         </div>
-        <div class="service-card">
-          <img src="service_icon_2.png" alt="Análisis de sensibilidad" />
+        <div class="solucion-card">
+          <div class="icon-wrapper">
+            <img src="service_icon_2.png" alt="Análisis de sensibilidad" />
+          </div>
           <h3>Análisis de sensibilidad</h3>
           <p>
             Identificamos variables clave y evaluamos la robustez de modelos
-            mediante métodos estadísticos y de machine learning.
+            estadísticos utilizando métodos de machine learning.
           </p>
         </div>
-        <div class="service-card">
-          <img src="service_icon_3.png" alt="Análisis de series de tiempo" />
-          <h3>Análisis de series de tiempo</h3>
+        <div class="solucion-card">
+          <div class="icon-wrapper">
+            <img src="service_icon_3.png" alt="Series de tiempo" />
+          </div>
+          <h3>Series de tiempo</h3>
           <p>
-            Pronosticamos tendencias ambientales utilizando datos históricos y
-            modelos de series de tiempo para anticipar escenarios futuros.
+            Pronosticamos tendencias ambientales a partir de datos históricos
+            para anticipar escenarios futuros y tomar mejores decisiones.
+          </p>
+        </div>
+        <div class="solucion-card">
+          <div class="icon-wrapper">
+            <img src="service_icon_1.png" alt="Consultoría a medida" />
+          </div>
+          <h3>Consultoría a medida</h3>
+          <p>
+            Diseñamos soluciones personalizadas según las necesidades
+            específicas de cada organización o proyecto.
           </p>
         </div>
       </div>
     </section>
 
-    <!-- Métodos -->
-    <section id="metodos">
-      <h2 class="section-title">Métodos</h2>
-      <div class="methods-list">
-        <div class="method-item"><span>Econometría</span></div>
-        <div class="method-item"><span>Estadística</span></div>
-        <div class="method-item"><span>Machine learning</span></div>
+    <!-- Sección de proceso -->
+    <section id="proceso" class="proceso">
+      <h2 class="section-title">Cómo funciona</h2>
+      <div class="pasos-grid">
+        <div class="paso">
+          <div class="numero">1</div>
+          <h3>Recopilación de datos</h3>
+          <p>
+            Recogemos y depuramos información proveniente de diversas
+            fuentes para obtener bases de datos sólidas y confiables.
+          </p>
+        </div>
+        <div class="paso">
+          <div class="numero">2</div>
+          <h3>Análisis y modelado</h3>
+          <p>
+            Aplicamos herramientas econométricas y de inteligencia
+            artificial para extraer patrones y evaluar impactos.
+          </p>
+        </div>
+        <div class="paso">
+          <div class="numero">3</div>
+          <h3>Recomendaciones</h3>
+          <p>
+            Presentamos informes claros y recomendaciones accionables
+            para impulsar políticas y estrategias sostenibles.
+          </p>
+        </div>
       </div>
+      <a href="#contacto" class="cta-secondary">Solicitar asesoría</a>
     </section>
 
-    <!-- ¿Por qué elegirnos? -->
-    <section id="por-que">
+    <!-- Sección de razones -->
+    <section id="razones" class="razones">
       <h2 class="section-title">¿Por qué elegirnos?</h2>
-      <div class="reasons-grid">
-        <div class="reason-card">
-          <h4>Rigurosidad académica</h4>
+      <ul class="razones-list">
+        <li>
+          <strong>Rigurosidad académica</strong>
           <p>
-            Basamos nuestros análisis en metodologías validadas por la comunidad
-            científica y las mejores prácticas internacionales.
+            Basamos nuestros análisis en metodologías validadas y
+            revisadas por la comunidad científica.
           </p>
-        </div>
-        <div class="reason-card">
-          <h4>Soluciones a medida</h4>
+        </li>
+        <li>
+          <strong>Soluciones a medida</strong>
           <p>
-            Adaptamos nuestras herramientas a las necesidades específicas de cada
+            Adaptamos nuestras herramientas a las necesidades de cada
             cliente para maximizar el impacto de sus decisiones.
           </p>
-        </div>
-        <div class="reason-card">
-          <h4>Compromiso con la sostenibilidad</h4>
+        </li>
+        <li>
+          <strong>Compromiso con la sostenibilidad</strong>
           <p>
-            Trabajamos para impulsar políticas y estrategias que reduzcan el
-            impacto ambiental y promuevan un desarrollo sostenible.
+            Trabajamos para impulsar políticas y estrategias que reduzcan
+            el impacto ambiental y promuevan un desarrollo sostenible.
           </p>
-        </div>
-      </div>
+        </li>
+      </ul>
     </section>
 
-    <!-- Contacto -->
-    <section id="contacto">
-      <h2 class="section-title">Contacto</h2>
-      <div class="contact-container">
-        <div class="contact-info">
-          <h3>Ponte en contacto</h3>
+    <!-- Sección de contacto -->
+    <section id="contacto" class="contacto">
+      <div class="contacto-container">
+        <div class="contacto-info">
+          <h2>Ponte en contacto</h2>
           <p>
             ¿Interesado en nuestros servicios? Estamos aquí para ayudarte.
-            Contáctanos y descubre cómo podemos aportar valor a tu proyecto.
           </p>
-          <p><strong>Email:</strong> info@greenevidence.cl</p>
-          <p><strong>Teléfono:</strong> +56 9 1234 5678</p>
+          <p>
+            <strong>Email:</strong> info@greenevidence.cl<br />
+            <strong>Teléfono:</strong> +56 9 1234 5678
+          </p>
         </div>
-        <form class="contact-form" action="#" method="post">
+        <form class="contacto-form" action="#" method="post">
           <label for="nombre">Nombre</label>
           <input type="text" id="nombre" name="nombre" required />
           <label for="correo">Correo electrónico</label>
@@ -136,8 +186,8 @@
     </section>
 
     <!-- Pie de página -->
-    <footer>
-      &copy; 2026 GreenEvidence. Todos los derechos reservados.
+    <footer class="footer">
+      <p>&copy; 2026 GreenEvidence. Todos los derechos reservados.</p>
     </footer>
   </body>
 </html>
