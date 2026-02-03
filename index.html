@@ -4,208 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GreenEvidence – Evaluación ambiental basada en datos</title>
-    <link rel="icon" type="image/png" href="logo.png">
-    <style>
-      /* Paleta de colores actualizada basada en el logo y hero */
-      :root {
-        --primary-dark: #00477a;
-        --primary: #158eae;
-        --secondary: #34a63a;
-        --background: #ecf8f6;
-        --light: #ffffff;
-        --text-dark: #113a2e;
-      }
-
-      body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        color: var(--text-dark);
-        background-color: var(--background);
-      }
-
-      /* Encabezado con logo y navegación */
-      header {
-        background-color: var(--primary-dark);
-        color: var(--light);
-        padding: 1.5rem;
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-        flex-wrap: wrap;
-      }
-
-      header img.logo {
-        height: 50px;
-      }
-
-      header h1 {
-        margin: 0;
-        font-size: 1.5rem;
-      }
-
-      nav ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        gap: 1rem;
-        flex-wrap: wrap;
-      }
-
-      nav a {
-        color: var(--light);
-        text-decoration: none;
-        font-weight: bold;
-        padding: 0.25rem 0.5rem;
-      }
-
-      nav a:hover,
-      nav a:focus {
-        text-decoration: underline;
-      }
-
-      /* Sección hero con imagen de fondo */
-      .hero {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 4rem 1rem;
-        text-align: center;
-        background-image: url('hero-bg.png');
-        background-size: cover;
-        background-position: center;
-        color: var(--light);
-      }
-
-      .hero h2 {
-        margin: 0 0 1rem;
-        font-size: 2.5rem;
-      }
-
-      .hero p {
-        font-size: 1.2rem;
-        max-width: 600px;
-        margin: 0 auto 1.5rem;
-      }
-
-      .cta-button {
-        background-color: var(--light);
-        color: var(--primary-dark);
-        border: none;
-        padding: 0.75rem 1.5rem;
-        font-size: 1rem;
-        font-weight: bold;
-        border-radius: 4px;
-        cursor: pointer;
-      }
-
-      .cta-button:hover,
-      .cta-button:focus {
-        background-color: #e4f2f1;
-      }
-
-      section {
-        padding: 3rem 1rem;
-        max-width: 960px;
-        margin: 0 auto;
-      }
-
-      .section-title {
-        font-size: 1.8rem;
-        margin-bottom: 1.5rem;
-        text-align: center;
-        color: var(--primary-dark);
-      }
-
-      .services {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-        gap: 1.5rem;
-      }
-
-      .service-card {
-        background-color: var(--light);
-        border: 1px solid #dbe5e5;
-        border-radius: 6px;
-        padding: 1.5rem;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-      }
-
-      .service-card h3 {
-        margin-top: 0;
-        color: var(--primary);
-      }
-
-      .methods {
-        background-color: var(--light);
-        border-radius: 6px;
-        padding: 2rem;
-      }
-
-      .reasons {
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-      }
-
-      .reason-item {
-        background-color: var(--light);
-        border: 1px solid #dbe5e5;
-        border-radius: 6px;
-        padding: 1.5rem;
-      }
-
-      form {
-        display: grid;
-        gap: 1rem;
-      }
-
-      form label {
-        font-weight: bold;
-      }
-
-      form input,
-      form textarea {
-        width: 100%;
-        padding: 0.5rem;
-        border: 1px solid #c3d4d5;
-        border-radius: 4px;
-        font-size: 1rem;
-      }
-
-      form button {
-        background-color: var(--primary);
-        color: var(--light);
-        border: none;
-        padding: 0.75rem 1.5rem;
-        font-size: 1rem;
-        border-radius: 4px;
-        cursor: pointer;
-      }
-
-      form button:hover,
-      form button:focus {
-        background-color: var(--secondary);
-      }
-
-      footer {
-        text-align: center;
-        padding: 1.5rem;
-        background-color: var(--primary-dark);
-        color: var(--light);
-        font-size: 0.875rem;
-      }
-    </style>
+    <!-- Fuente moderna desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <!-- Icono de la pestaña -->
+    <link rel="icon" type="image/png" href="logo_modern_icon.png" />
+    <!-- Estilos principales -->
+    <link rel="stylesheet" href="modern-style.css" />
   </head>
   <body>
-    <header>
-      <img src="logo.png" alt="GreenEvidence Logo" class="logo" />
-      <h1>GreenEvidence</h1>
+    <!-- Barra de navegación -->
+    <header class="navbar">
+      <div class="logo">
+        <img src="logo_modern_icon.png" alt="Logo de GreenEvidence" />
+        <span class="wordmark">GreenEvidence</span>
+      </div>
       <nav>
         <ul>
-          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#hero">Inicio</a></li>
           <li><a href="#servicios">Servicios</a></li>
           <li><a href="#metodos">Métodos</a></li>
           <li><a href="#por-que">¿Por qué elegirnos?</a></li>
@@ -214,116 +29,115 @@
       </nav>
     </header>
 
-    <section id="inicio" class="hero" role="banner">
-      <h2>Transformamos datos ambientales en evidencia</h2>
+    <!-- Hero -->
+    <section id="hero" class="hero">
+      <h1>Transformamos datos ambientales en evidencia</h1>
       <p>
-        Somos una plataforma de evaluación y consultoría ambiental especializada
-        en la medición de impactos ambientales, políticas públicas y estrategias
-        corporativas de sostenibilidad. Integramos econometría, ciencia de datos
-        e inteligencia artificial para convertir información compleja en
-        decisiones informadas.
+        Somos una plataforma de evaluación y consultoría ambiental especializada en
+        la medición de impactos ambientales, políticas públicas y estrategias de
+        sostenibilidad. Integramos econometría, ciencia de datos e inteligencia
+        artificial para convertir información compleja en decisiones informadas.
       </p>
-      <button
-        class="cta-button"
-        onclick="document.getElementById('contacto').scrollIntoView({ behavior: 'smooth' })"
-      >
-        Solicitar asesoría
-      </button>
+      <a href="#contacto" class="cta-button">Solicitar asesoría</a>
     </section>
 
+    <!-- Servicios -->
     <section id="servicios">
       <h2 class="section-title">Servicios</h2>
-      <div class="services">
+      <div class="services-grid">
         <div class="service-card">
-          <h3>Medición de impactos ambientales</h3>
+          <img src="service_icon_1.png" alt="Evaluación de políticas" />
+          <h3>Evaluación de políticas</h3>
           <p>
-            Evaluamos proyectos y políticas para cuantificar sus efectos sobre
-            ecosistemas y comunidades, proporcionando indicadores sólidos y
-            trazables.
+            Analizamos el impacto de políticas públicas utilizando técnicas
+            econométricas avanzadas para medir su eficacia y eficiencia.
           </p>
         </div>
         <div class="service-card">
-          <h3>Evaluación de políticas públicas</h3>
+          <img src="service_icon_2.png" alt="Análisis de sensibilidad" />
+          <h3>Análisis de sensibilidad</h3>
           <p>
-            Aplicamos análisis econométricos y de ciencia de datos para
-            determinar la eficacia de instrumentos regulatorios y programas
-            ambientales.
+            Identificamos variables clave y evaluamos la robustez de modelos
+            mediante métodos estadísticos y de machine learning.
           </p>
         </div>
         <div class="service-card">
-          <h3>Estrategias de sostenibilidad</h3>
+          <img src="service_icon_3.png" alt="Análisis de series de tiempo" />
+          <h3>Análisis de series de tiempo</h3>
           <p>
-            Diseñamos y asesoramos en estrategias corporativas para mejorar el
-            desempeño ambiental y social de las organizaciones.
+            Pronosticamos tendencias ambientales utilizando datos históricos y
+            modelos de series de tiempo para anticipar escenarios futuros.
           </p>
         </div>
       </div>
     </section>
 
+    <!-- Métodos -->
     <section id="metodos">
-      <h2 class="section-title">Métodos y enfoques</h2>
-      <div class="methods">
-        <p>
-          Nuestro trabajo se sustenta en metodologías de análisis econométrico,
-          ciencia de datos e inteligencia artificial. Utilizamos modelos
-          estadísticos avanzados, aprendizaje automático y sistemas de información
-          geográfica para integrar múltiples fuentes de datos y ofrecer
-          diagnósticos precisos. Estas técnicas nos permiten identificar
-          patrones, predecir tendencias y evaluar la efectividad de
-          intervenciones ambientales.
-        </p>
+      <h2 class="section-title">Métodos</h2>
+      <div class="methods-list">
+        <div class="method-item"><span>Econometría</span></div>
+        <div class="method-item"><span>Estadística</span></div>
+        <div class="method-item"><span>Machine learning</span></div>
       </div>
     </section>
 
+    <!-- ¿Por qué elegirnos? -->
     <section id="por-que">
-      <h2 class="section-title">¿Por qué elegir GreenEvidence?</h2>
-      <div class="reasons">
-        <div class="reason-item">
-          <h3>Rigor científico</h3>
+      <h2 class="section-title">¿Por qué elegirnos?</h2>
+      <div class="reasons-grid">
+        <div class="reason-card">
+          <h4>Rigurosidad académica</h4>
           <p>
-            Combinamos econometría y ciencia de datos para producir evaluaciones
-            basadas en evidencia y respaldadas por literatura académica.
+            Basamos nuestros análisis en metodologías validadas por la comunidad
+            científica y las mejores prácticas internacionales.
           </p>
         </div>
-        <div class="reason-item">
-          <h3>Enfoque sostenible</h3>
+        <div class="reason-card">
+          <h4>Soluciones a medida</h4>
           <p>
-            Nuestra perspectiva integra las dimensiones ecológica, social y
-            económica, promoviendo soluciones duraderas y equitativas.
+            Adaptamos nuestras herramientas a las necesidades específicas de cada
+            cliente para maximizar el impacto de sus decisiones.
           </p>
         </div>
-        <div class="reason-item">
-          <h3>Transparencia</h3>
+        <div class="reason-card">
+          <h4>Compromiso con la sostenibilidad</h4>
           <p>
-            Presentamos metodologías, datos y resultados de manera clara para que
-            nuestros clientes comprendan y confíen en nuestras recomendaciones.
+            Trabajamos para impulsar políticas y estrategias que reduzcan el
+            impacto ambiental y promuevan un desarrollo sostenible.
           </p>
         </div>
       </div>
     </section>
 
+    <!-- Contacto -->
     <section id="contacto">
       <h2 class="section-title">Contacto</h2>
-      <p>
-        Para más información o para solicitar una propuesta, completa el
-        siguiente formulario:
-      </p>
-      <form action="#" method="post">
-        <label for="nombre">Nombre</label>
-        <input type="text" id="nombre" name="nombre" required />
-
-        <label for="correo">Correo electrónico</label>
-        <input type="email" id="correo" name="correo" required />
-
-        <label for="mensaje">Mensaje</label>
-        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-
-        <button type="submit">Enviar</button>
-      </form>
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3>Ponte en contacto</h3>
+          <p>
+            ¿Interesado en nuestros servicios? Estamos aquí para ayudarte.
+            Contáctanos y descubre cómo podemos aportar valor a tu proyecto.
+          </p>
+          <p><strong>Email:</strong> info@greenevidence.cl</p>
+          <p><strong>Teléfono:</strong> +56 9 1234 5678</p>
+        </div>
+        <form class="contact-form" action="#" method="post">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required />
+          <label for="correo">Correo electrónico</label>
+          <input type="email" id="correo" name="correo" required />
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" required></textarea>
+          <button type="submit">Enviar mensaje</button>
+        </form>
+      </div>
     </section>
 
+    <!-- Pie de página -->
     <footer>
-      <p>© 2026 GreenEvidence. Todos los derechos reservados.</p>
+      &copy; 2026 GreenEvidence. Todos los derechos reservados.
     </footer>
   </body>
 </html>
