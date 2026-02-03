@@ -48,7 +48,8 @@
     </section>
 
     <!-- Sección de soluciones/servicios -->
-    <section id="soluciones" class="soluciones">
+    <!-- Las clases "reveal" permiten animar la aparición de cada sección al hacer scroll -->
+    <section id="soluciones" class="soluciones reveal">
       <h2 class="section-title">
         <span class="highlight">Nuestras</span> Soluciones
       </h2>
@@ -101,7 +102,7 @@
     </section>
 
     <!-- Sección de proceso -->
-    <section id="proceso" class="proceso">
+    <section id="proceso" class="proceso reveal">
       <h2 class="section-title">Cómo funciona</h2>
       <div class="pasos-grid">
         <div class="paso">
@@ -133,7 +134,7 @@
     </section>
 
     <!-- Sección de razones -->
-    <section id="razones" class="razones">
+    <section id="razones" class="razones reveal">
       <h2 class="section-title">¿Por qué elegirnos?</h2>
       <ul class="razones-list">
         <li>
@@ -161,7 +162,7 @@
     </section>
 
     <!-- Sección de contacto -->
-    <section id="contacto" class="contacto">
+    <section id="contacto" class="contacto reveal">
       <div class="contacto-container">
         <div class="contacto-info">
           <h2>Ponte en contacto</h2>
@@ -189,5 +190,26 @@
     <footer class="footer">
       <p>&copy; 2026 GreenEvidence. Todos los derechos reservados.</p>
     </footer>
+
+    <!-- Script para animaciones de scroll: usa IntersectionObserver para añadir la clase "active" -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const revealElements = document.querySelectorAll('.reveal');
+        const options = {
+          threshold: 0.1
+        };
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('active');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, options);
+        revealElements.forEach((el) => {
+          observer.observe(el);
+        });
+      });
+    </script>
   </body>
 </html>
